@@ -10,6 +10,7 @@ type Notice struct {
 type AndroidNotice struct {
 	Alert     string                 `json:"alert"`
 	Title     string                 `json:"title,omitempty"`
+	Alert_Type int32                  `json:"alert_type,omitempty"`
 	BuilderId int                    `json:"builder_id,omitempty"`
 	Extras    map[string]interface{} `json:"extras,omitempty"`
 }
